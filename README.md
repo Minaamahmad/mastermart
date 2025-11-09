@@ -40,7 +40,7 @@ npm install
 
 3. Create a `.env` file in the backend directory:
 ```
-MONGODB_URI=mongodb://localhost:27017/ecommerce
+MONGODB_URI=mongodb:
 JWT_SECRET=your_secret_key_here_change_in_production
 PORT=5000
 ```
@@ -52,7 +52,7 @@ PORT=5000
 npm run dev
 ```
 
-The backend will run on `http://localhost:5000`
+The backend will run on `
 
 ### Frontend Setup
 
@@ -68,7 +68,7 @@ npm install
 
 3. Create a `.env` file in the frontend directory (optional):
 ```
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=
 ```
 
 4. Start the development server:
@@ -76,14 +76,14 @@ VITE_API_URL=http://localhost:5000/api
 npm run dev
 ```
 
-The frontend will run on `http://localhost:3000`
+The frontend will run on `
 
 ## Initial Admin Setup
 
 To create an admin account, you can use the registration endpoint:
 
 ```bash
-curl -X POST http://localhost:5000/api/auth/register \
+curl -X POST
   -H "Content-Type: application/json" \
   -d '{"username":"admin","password":"yourpassword"}'
 ```
